@@ -1,0 +1,198 @@
+/*
+    Main Palette
+        Dark Blue: #36424E
+        Grey: #90979F
+        Blue Grey: #A7B9D1
+        Light Blue: #BACEE6
+        White: #F3FDFE
+    Complementary Colors
+        Milk Chocolate: #897653
+        Light Tan: #E6D6BA
+    Forms
+        Background: #E3EBF5;
+        Border: #36424E;
+        Text: #36424E
+
+    https://color.adobe.com/inspiration-color-theme-10819633/?showPublished=true
+
+    Fonts
+        Font-Family: 'Lato', Sans-Serif;
+        Font-Family: 'Catamaran', Sans-Serif;
+
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Lato:400i" rel="stylesheet">
+
+    border: 1px solid black;
+*/
+
+
+body {
+    background-color: #A7B9D1;
+    padding-bottom: 50px;
+}
+
+
+.headerStyle {
+    border-bottom: 4px solid #897653;
+    background-color: #F3FDFE;
+}
+
+#signatureImage {
+    max-width: 100%;
+    height: auto;
+    margin: 0px 25%;
+}
+
+.headerMenu {
+    font-family: Catamaran, Arial, sans-serif;
+    font-size: 18pt;
+    margin: auto;
+}
+
+p .headerTextStyle {
+    float: left;
+    width: 100%;
+    padding: 0px 3px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px 30%;
+}
+
+li {
+    float: left;
+    padding: 0px 3px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+a:link {color: #36424E;}
+a:visited {color: #36424E;}
+a:hover {color: #BACEE6;}
+a:active {color: #90979F;}
+
+
+.content {
+    font-family: lato, Arial, sans-serif;
+    background-color: #F3FDFE;
+    border: 2px solid #897653;
+    margin: 1em auto;
+    padding: 2em 4em;
+    
+}
+
+h1 {
+    font-size: 3em;
+    color: #36424E;
+    padding-bottom: .5em;
+    border-bottom: 2px solid #897653;
+}
+
+p {
+    font-size: 1em;
+    padding: .5em 0em;
+}
+
+.image1 {
+    float: left;
+    max-width: 100%;
+    height: auto;
+    margin-right: .5em;
+    border: 2px solid #897653;
+}
+
+.image2 {
+    float: right;
+    max-width: 100%;
+    height: auto;
+    margin-left: .5em;
+    border: 2px solid #897653;
+}
+
+/* Portfolio Page Specific */
+
+table {
+    color: #F3FDFE;
+}
+
+td {
+    width: 15em;
+    height: 10em;
+    border: 1em solid #F3FDFE;
+    background-color: #36424E;
+    padding: 0px;
+}
+
+.cellText {
+    font-family: Catamaran, Arial, sans-serif;
+    font-size: 16pt;
+    position: relative;
+    bottom: -45px;
+    width: 100%;
+    height: 2em;
+    text-align: center;
+    background-color: darkorange;
+}
+
+#github {
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url(../images/octocat_thumbnail.png);
+    background-repeat: no-repeat;
+}
+
+#scratch {
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url(../images/catscratch.png);
+    background-repeat: no-repeat;
+}
+
+#photography {
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url(../images/bee_thumbnail.jpg);
+    background-repeat: no-repeat;
+}
+
+#graphicDesign {
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url(../images/vozzilla_thumbnail.jpg);
+    background-repeat: no-repeat;
+}
+
+#fineArt {
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url(../images/drawing_thumbnail.jpg);
+    background-repeat: no-repeat;
+}
+
+
+/* Footer All Pages */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 4px solid #E6D6BA;
+    background-color: #36424E;
+}
+
+.copyRightStyle {
+    font-family: Catamaran, Arial, sans-serif;
+    font-size: 12pt;
+    color: #F3FDFE;
+    margin: 12px 20px;
+}
+
+
+
+
+
