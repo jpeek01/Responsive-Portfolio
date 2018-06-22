@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+    Main Palette
+        Dark Blue: #36424E
+        Grey: #90979F
+        Blue Grey: #A7B9D1
+        Light Blue: #BACEE6
+        White: #F3FDFE
+    Complementary Colors
+        Milk Chocolate: #897653
+        Light Tan: #E6D6BA
+    Forms
+        Background: #E3EBF5;
+        Border: #36424E;
+        Text: #36424E
+
+
+    https://color.adobe.com/inspiration-color-theme-10819633/?showPublished=true
+
+    Fonts
+        Font-Family: 'Lato', Sans-Serif;
+        Font-Family: 'Catamaran', Sans-Serif;
+
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Lato:400i" rel="stylesheet">
+-->
+
+<head>
+    <title>James Peek</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Lato:400i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/forms.css" />
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <img src="assets/images/james_peek.png" id="signatureImage" alt="James Peek Signature">
+
+            <div id="headerMenu">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li id="menuSpacer">|</li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li id="menuSpacer">|</li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div id="content">
+            
+            <section class="clearfix">
+
+                <h1 class="sectionHeader">Contact Me</h1>
+
+                <hr/> <br/>
+
+                <img src="assets/images/bridge.jpg" class="image1" alt="Picture of James Peek in front of a small bridge in El Dorado State Park">
+
+                <p>Please feel free to contact me for inqueries into my work</p>
+                
+                <fieldset>
+                    <form class="forms">
+                        <label name="name" id="contactNameLabel">Name: </label>
+                        <span class="contactForm">
+                            <input type="text" id="contactName" placeholder="Name">
+                        </span>
+                        
+                        <label name="email" id="contactEmailLabel">Email: </label>
+                        <span class="contactForm">
+                            <input type="email" id="contactEmail" placeholder="Email" required="true">
+                        </span>
+
+                        <!-- message type  -->
+                        <label name="messageType" id="messageTypeLabel">Reason for contacting me</label>
+                            <span class="contactForm">
+                                <input type="radio" name="messageType" id="messageRadioButton" value="resume"> Resume
+                                <input type="radio" name="messageType" id="messageRadioButton" value="programmingWork"> Programming
+                                <input type="radio" name="messageType" id="messageRadioButton" value="graphicsWork"> Graphics
+                                <input type="radio" name="messageType" id="messageRadioButton" value="artCommision"> Artwork
+                                <input type="radio" name="messageType" id="messageRadioButton" value="Other"> Other
+                            </span>
+                        <label id="contactMessageLabel">Message: </label>
+                        <span name="message" class="contactForm">
+                            <textarea rows="4" cols="50" id="contactMessage" required="true"></textarea>
+                        </span>
+
+                        <span><input type="submit" id="contactSubmit"></input></span>
+                    </form>
+                </fieldset>
+            </section>
+        </div>
+
+        <footer>
+            <p id="copyRight">&copy; James Peek 2018</p>
+        </footer>
+    </div>
+</body>
+</html>
