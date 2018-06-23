@@ -12,24 +12,26 @@
         Background: #E3EBF5;
         Border: #36424E;
         Text: #36424E
-
-
     https://color.adobe.com/inspiration-color-theme-10819633/?showPublished=true
-
     Fonts
         Font-Family: 'Lato', Sans-Serif;
         Font-Family: 'Catamaran', Sans-Serif;
-
     <link href="https://fonts.googleapis.com/css?family=Catamaran|Lato:400i" rel="stylesheet">
 */
 
+#contactForm {
+    float: left;
+    margin: 1em;
+}
+
+
 .formsText {
-    margin: 10px 0px;
+    margin: .5em 1em;
     color: #36424E;
 }
 
 .formsInput {
-    width: 100%;
+    margin: .5em 1em;
     background-color: #E3EBF5;
     border: 1px solid #36424E;
 }
@@ -43,6 +45,18 @@
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
-    margin: 10px 0px;
+    margin: .5em 1em;
     cursor: pointer;
 }
+
+#messageText {
+    width: 100%;
+    min-height: 35px;
+}
+
+
+p {
+    margin: 1em;
+}
+
+

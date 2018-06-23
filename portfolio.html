@@ -15,14 +15,10 @@
         Background: #E3EBF5;
         Border: #36424E;
         Text: #36424E
-
-
     https://color.adobe.com/inspiration-color-theme-10819633/?showPublished=true
-
     Fonts
         Font-Family: 'Lato', Sans-Serif;
         Font-Family: 'Catamaran', Sans-Serif;
-
     <link href="https://fonts.googleapis.com/css?family=Catamaran|Lato:400i" rel="stylesheet">
 -->
 
@@ -30,17 +26,17 @@
     <title>James Peek</title>
 
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://fonts.googleapis.com/css?family=Catamaran|Lato:400i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 </head>
 
 <body>
     <div id="page">
-        <header>
-
-            <img src="assets/images/james_peek.png" id="signatureImage" alt="James Peek Signature">
-
+        <header class="clearfix">
+            <div id="signature">
+                <img src="assets/images/james_peek.png" id="signatureImage" alt="James Peek Signature"> 
+            </div>
             <div id="headerMenu">
                 <ul>
                     <li><a href="index.html">About</a></li>
@@ -58,8 +54,37 @@
                 <h1 class="sectionHeader">Portfolio</h1>
             
                 <hr/> <br/>
+                <div id="portfolioCellsContainer">
+                    <div id="topRow">
+                        <div id="topLeft">
+                            <img src="assets/images/octocat_thumbnail.png" id="gridImage" alt="">
+                            <p class="cellText">Github</p>
+                        </div>
+                        <div id="topRight">
+                            <img src="assets/images/catscratch.png" id="gridImage" alt="">
+                            <p class="cellText">Scratch</p>
+                        </div>
+                    </div>
+                    <div id="middleRow">
+                        <div id="middleLeft">
+                            <img src="assets/images/bee_thumbnail.jpg" id="gridImage" alt="">
+                            <p class="cellText">Photography</p>
+                        </div>
+                        <div id="middleRight">
+                            <img src="assets/images/vozzilla_thumbnail.jpg" id="gridImage" alt="">
+                            <p class="cellText">Graphic Design</p>
+                        </div>
+                    </div>
+                    <div id="bottomRow">
+                        <div id="bottomLeft">
+                            <img src="assets/images/drawing_thumbnail.jpg" id="gridImage" alt="">
+                            <p class="cellText">Fine Art</p>
+                        </div>
+                        <!-- <div id="bottomRight"></div> -->
+                    </div>
+                </div>
 
-                <table>
+                <!-- <table>
                     <tr>
                         <td id="github">
                             <p class="cellText">Github</p>
@@ -81,7 +106,7 @@
                             <p class="cellText">Fine Art</p>
                         </td>
                     </tr>
-                </table>
+                </table> -->
 
             </section>
         </div>
@@ -92,4 +117,3 @@
     </div>
 </body>
 </html>
-

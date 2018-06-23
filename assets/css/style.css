@@ -12,14 +12,13 @@
         Background: #E3EBF5;
         Border: #36424E;
         Text: #36424E
-
     https://color.adobe.com/inspiration-color-theme-10819633/?showPublished=true
-
     Fonts
         Font-Family: 'Lato', Sans-Serif;
         Font-Family: 'Catamaran', Sans-Serif;
-
     <link href="https://fonts.googleapis.com/css?family=Catamaran|Lato:400i" rel="stylesheet">
+
+    border: 1px solid black;
 */
 
 * {
@@ -35,6 +34,7 @@ body {
 h1 {
     font-size: 26pt;
     color: #36424E;
+    
 }
 
 hr {
@@ -43,7 +43,7 @@ hr {
 }
 
 p {
-    font-size: 12pt;
+    font-size: 14pt;
     margin: 0px 15px 15px 15px;
 }
 
@@ -54,23 +54,31 @@ p {
 
 header {
     width: 100%;
-    height: 85px;
+    height: auto;
     border-bottom: 4px solid #897653;
     background-color: #F3FDFE;
 }
 
+#signature {
+    float: left;
+    max-width: 100%;
+    height: auto;
+    margin-left: 20%;
+}
+
 #signatureImage {
-    width: 394px;
-    height: 122px;
-    margin: 0% 10%;
+    max-width: 100%;
+    height: auto;
+
 }
 
 #headerMenu {
+    float: right;
     font-family: Catamaran, Arial, sans-serif;
     font-size: 18pt;
-    float: right;
-    width: 36%;
-    margin: auto;
+    max-width: 100%;
+    height: auto;
+    margin-right: 20%;
 }
 
 ul {
@@ -93,94 +101,114 @@ a:hover {color: #BACEE6;}
 a:active {color: #90979F;}
 
 
+#ruleLineHeader {
+    background-color: #897653;
+    width: 100%;
+    height: 4px;
+}
+
 #content {
     font-family: lato, Arial, sans-serif;
     background-color: #F3FDFE;
     border: 2px solid #897653;
     width: 60%;
-    height: 80%;
-    margin: 15px auto;
-    padding: 25px 50px;
-    
+    margin: 1em auto;
+    padding: 2em 4em;   
 }
 
 .image1 {
     float: left;
-    width: 25%;
-    height: 25%;
+    max-width: 75%;
+    height: auto;
     margin: 0px 15px;
     border: 2px solid #897653;
 }
 
 .image2 {
     float: right;
-    width: 25%;
-    height: 25%;
+    max-width: 75%;
+    height: auto;
     margin: 0px 15px;
     border: 2px solid #897653;
 }
 
-/* Portfolio Page Specific */
-
-table {
-    color: #F3FDFE;
+#ruleLineFooter {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    height: 4px;
+    background-color: #E6D6BA;
 }
 
-td {
-    width: 250px;
-    height: 150px;
-    border: 15px solid #F3FDFE;
-    background-color: #36424E;
+/* Portfolio Page Grid */
+
+/*** rows ***/
+
+#portfolioCellsContainer {
+    width: 65%;
+}
+
+#topRow {
+    display: inline-block;
+    margin: 0px;
+}
+
+#middleRow {
+    display: inline-block;
+    margin: 0px;
+}
+
+#bottomRow {
+    display: inline-block;
+    margin: 0px;
+}
+
+/*** columns ***/
+
+#topLeft {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#topRight {
+    display: inline-block;
+
+}
+
+#middleLeft {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#middleRight {
+    display: inline-block;
+}
+
+#bottomLeft {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#portfolioImages {
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
     padding: 0px;
 }
 
 .cellText {
+    position: relative;
+    bottom: 30px;
     font-family: Catamaran, Arial, sans-serif;
     font-size: 12pt;
-    position: relative;
-    left: -15px;
-    bottom: -50px;
-    width: 100%;
-    height: 20%;
     text-align: center;
+    width: 100%;
+    height: 30%;
+    margin: auto;
+    padding: 0px;
+    color: white;
     background-color: darkorange;
 }
-
-#github {
-    width: 250px;
-    height: 150px;
-    background-image: url(../images/octocat_thumbnail.png);
-    background-repeat: no-repeat;
-}
-
-#scratch {
-    width: 250px;
-    height: 150px;
-    background-image: url(../images/catscratch.png);
-    background-repeat: no-repeat;
-}
-
-#photography {
-    width: 250px;
-    height: 150px;
-    background-image: url(../images/bee_thumbnail.jpg);
-    background-repeat: no-repeat;
-}
-
-#graphicDesign {
-    width: 250px;
-    height: 150px;
-    background-image: url(../images/vozzilla_thumbnail.jpg);
-    background-repeat: no-repeat;
-}
-
-#fineArt {
-    width: 250px;
-    height: 150px;
-    background-image: url(../images/drawing_thumbnail.jpg);
-    background-repeat: no-repeat;
-}
-
 
 /* Footer All Pages */
 
@@ -207,22 +235,175 @@ footer {
     clear: both;
   }
 
-@media screen and (max-width: 768px) {
-    #content {
-    width: 90%;
-    }
 
-    #headerMenu {
-    font-family: Catamaran, Arial, sans-serif;
-    font-size: 18pt;
-    width: 60%;
-    margin: 10px auto;
-    }
-
+@media only screen and (max-width: 980px) {
     #signatureImage {
-        width: 394px;
+        max-width: 75%;
         height: auto;
         margin: 0% 10%;
     }
+
+    #headerMenu {
+        float: right;
+        font-size: 16pt;
+        max-width: 100%;
+        height: auto;
+        margin-right: 20%;
+    }
+
+    #content {
+        width: 85%;
+        margin: 1em auto;
+        padding: 1em 2em;   
+    }
+
+    h1 {
+        font-size: 22pt;
+        color: #36424E;   
+    }
+
+    p {
+        font-size: 12pt;
+        margin: 0px 15px 15px 15px;
+    }
+
+    .image1 {
+        float: left;
+        max-width: 75%;
+        height: auto;
+        margin: 0px 15px;
+        border: 2px solid #897653;
+    }
     
+    .image2 {
+        float: right;
+        max-width: 75%;
+        height: auto;
+        margin: 0px 15px;
+        border: 2px solid #897653;
+    }
+
+    #portfolioImages {
+        max-width: 65%;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+
+}
+
+/* *****END 980px ***** */
+
+
+@media only screen and (max-width: 768px) {
+    #signatureImage {
+        max-width: 65%;
+        height: auto;
+        margin: 0% 10%;
+    }
+
+    #headerMenu {
+        float: right;
+        font-size: 14pt;
+        max-width: 100%;
+        height: auto;
+        margin-right: 20%;
+    }
+
+    #content {
+        width: 85%;
+        margin: 1em auto;
+        padding: 1em 2em;   
+    }
+
+    h1 {
+        font-size: 18pt;
+        color: #36424E;
+    }
+
+    p {
+        font-size: 10pt;
+        margin: 0px 15px 15px 15px;
+    }
+    
+    .image1 {
+        float: left;
+        max-width: 65%;
+        height: auto;
+        margin: 0px 15px;
+        border: 2px solid #897653;
+    }
+    
+    .image2 {
+        float: right;
+        max-width: 65%;
+        height: auto;
+        margin: 0px 15px;
+        border: 2px solid #897653;
+    }
+
+    #portfolioImages {
+        max-width: 55%;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+/* *****END 768px ***** */
+
+
+@media only screen and (max-width: 640px) {
+    #signatureImage {
+        max-width: 55%;
+        height: auto;
+        margin: 0% 10%;
+    }
+
+    #headerMenu {
+        float: right;
+        font-size: 12pt;
+        max-width: 100%;
+        height: auto;
+        margin-right: 20%;
+    }
+
+    #content {
+        width: 85%;
+        margin: 1em auto;
+        padding: 1em 2em;   
+    }
+
+    h1 {
+        font-size: 14pt;
+        color: #36424E;
+    }
+
+    p {
+        font-size: 10pt;
+        margin: 0px 15px 15px 15px;
+    }
+
+    .image1 {
+        float: left;
+        max-width: 55%;
+        height: auto;
+        margin: 0px 15px;
+        border: 2px solid #897653;
+    }
+    
+    .image2 {
+        float: right;
+        max-width: 45%;
+        height: auto;
+        margin: 0px 15px;
+        border: 2px solid #897653;
+    }
+
+    #portfolioImages {
+        max-width: 555%;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+    }
 }
